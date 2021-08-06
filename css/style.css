@@ -213,6 +213,7 @@ footer ul li:last-of-type {
 		right: 20%;
 		width: auto;
 		height: 60%;
+		overflow:hidden;
 	}
 	#banner-text {
 		width: 100%;
@@ -241,6 +242,7 @@ footer ul li:last-of-type {
 		right: 20%;
 		width: auto;
 		height: 50%;
+		overflow:hidden;
 	}
 }
 @media (max-width:479px) {
@@ -250,6 +252,7 @@ footer ul li:last-of-type {
 		left: 30%;
 		width: auto;
 		height: 50%;
+		overflow:hidden;
 	}
 }
 
