@@ -1,0 +1,263 @@
+body {
+	font-family: 'Abril Fatface', cursive;
+	font-family: 'Open Sans', sans-serif;
+}
+.center-box {
+	width: 80%;
+    margin: auto;
+}
+header {
+    padding: 1rem 0;
+	border-bottom: 2px solid #cacaca;
+}
+header .center-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    max-width: 12rem;
+}
+nav ul li {
+	display: inline-block;
+	float: left;
+	
+}
+nav ul li a {
+	padding: 0 2rem 0 0;
+}
+section {
+    margin-bottom: 4vw!important;
+}
+#banner {
+    background: #f7f7f7 url('../img/flower.png') top right;
+    background-size: cover;
+    padding: 10vw 0 10vw 0;
+    position: relative;
+	border-bottom: 2px solid #cacaca;
+}
+#banner img {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: auto;
+    height: 100%;
+}
+#banner-text {
+	width: 50%;
+}
+.button {
+    display: inline-block;
+    background:#f85f79;
+	border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+	font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0 4vw 0;
+}
+h1 {
+	font-family: 'Abril Fatface', cursive;
+}
+#banner-text h1 {
+	font-size: 40px;
+}
+#ujdonsagok h1 {
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#ajandek h1 {
+	font-size: 30px;
+	margin-top: 3rem;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	color: #f85f79;
+}
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 1rem;
+}
+p {
+	font-size: 16px;
+}
+#banner p {
+	margin: 1rem 0;
+}
+h1, h2 {
+	text-transform: uppercase;	
+}
+.product {
+	padding: 20pt;
+	text-align: center;
+	border: solid 2px #cacaca;
+}
+.product img {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.product .button {
+    display: inline-block;
+	background-color: inherit;
+    color: #f85f79;
+    text-transform: uppercase;
+	font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0 2vw 0;
+}
+#ajandek {
+	text-align: center;
+}
+#ajandek div div div {
+	border: solid 2px #cacaca;
+}
+#ajandek img {
+	width: 100%
+}
+#ajandek p {
+	padding: 2rem 3rem;
+}
+footer {
+	padding: 2rem 0 2rem 0;
+	background: #e2e2e2;
+	text-align: center;
+}
+footer ul li {
+	display: inline-block;
+	margin: auto;
+	
+}
+footer ul li a {
+	padding: 0 1rem 0 1rem;
+	color: #333333;
+	border-right: 1px solid #282828;
+	margin: 10px 0 20px; 
+}
+footer ul li:last-of-type {
+	border-right: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1180px) {
+	#ajandek {
+		
+	}
+	#ajandek img {
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+	}
+	nav ul li a {
+		padding: 0 1rem 0 0;
+	}
+}
+@media (max-width:1040px) {
+	#logo img {
+		width: 195px;
+		text-align: center;
+	}
+	#logo {
+		text-align: center;
+	}
+	header {
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav ul li a {
+		text-align: center;
+	}
+	nav ul li {
+		display: inline-block;
+		float: none;
+	}	
+	header .center-box {
+        flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+    }
+    #menu {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        padding-top: 1rem ;
+        border-top: solid 1px #ccc;
+		text-align: center;
+    }
+	.product {
+		margin-bottom: 2rem;
+	}
+}
+@media (max-width:930px) {
+	nav ul li {
+        font-size: large;
+    }
+	#banner {
+		background: #f7f7f7 url('../img/flower.png') top right;
+		background-size: cover;
+		padding: 5vw 0 50rem 0;
+		position: relative;
+		border-bottom: 2px solid #cacaca;
+	}
+	#banner img {
+		position: absolute;
+		bottom: 0;
+		right: 20%;
+		width: auto;
+		height: 60%;
+	}
+	#banner-text {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (max-width:768px) {
+	nav ul li {
+        font-size: x-large!important;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    nav ul li:last-of-type {
+        margin-bottom: 0;
+    }
+	#banner {
+		background: #f7f7f7 url('../img/flower.png') top right;
+		background-size: cover;
+		padding: 5vw 0 30rem 0;
+		align-items: center;
+	}
+	#banner img {
+		position: absolute;
+		bottom: 0;
+		right: 20%;
+		width: auto;
+		height: 50%;
+	}
+}
+@media (max-width:479px) {
+    #banner img {
+		position: absolute;
+		bottom: 0;
+		left: 30%;
+		width: auto;
+		height: 50%;
+	}
+}
+
+
+
+
+
+
+
+
+
