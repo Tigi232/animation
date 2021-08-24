@@ -41,9 +41,6 @@ section {
     position: relative;
 	border-bottom: 2px solid #cacaca;
 }
-#cosmetics {
-	all: unset;
-}
 #banner img {
     position: absolute;
     bottom: 0;
@@ -65,8 +62,31 @@ section {
     padding: 0.5rem 1.5rem;
     margin: 1.5rem 0 4vw 0;
 }
+@keyframes slidein {
+	0% { margin-left: -200px; }
+	100% { margin-left: 0px; }
+}
+@keyframes fadin {
+	0% { opacity: 0%; }
+	100% { opacity: 100%; }
+}
+@keyframes slideinright {
+	0% { margin-right: -200px; }
+	100% { margin-right: 0px; }
+}
 h1 {
 	font-family: 'Abril Fatface', cursive;
+}
+h1, h2, p, .button {
+	animation-name: slidein, fadin;
+	animation-duration: 4s;
+}
+#banner img {
+	animation-name: slideinright, fadin;
+	animation-duration: 4s;
+}
+#cosmetics {
+	animation: fadin;
 }
 #banner-text h1 {
 	font-size: 40px;
@@ -151,6 +171,13 @@ footer ul li:last-of-type {
 	border-right: none;
 }
 
+/*Animations*/
+
+@-webkit-keyframes slidein {
+	0% { left: -200px; }
+	100% { left: auto; }
+}
+
 /*MEDIA QUERIES*/
 
 @media (min-width:1180px) {
@@ -162,10 +189,9 @@ footer ul li:last-of-type {
 		left: 0!important;
 		right: 0!important;
 		bottom: 0!important;
-		margin:auto!important;
+		margin: auto!important;
 	}
 }
-
 @media (max-width:1180px) {
 	#ajandek img {
 		width: 100%;
