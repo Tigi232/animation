@@ -1,6 +1,12 @@
 body {
 	font-family: 'Abril Fatface', cursive;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+#wrapper {
+	position: relative;
+	overflow-x: hidden;
+	overflow: hidden;
 }
 .center-box {
 	width: 80%;
@@ -21,7 +27,6 @@ header .center-box {
 nav ul li {
 	display: inline-block;
 	float: left;
-	
 }
 nav ul li a {
 	padding: 0 2rem 0 0;
@@ -206,6 +211,7 @@ footer ul li:last-of-type {
 		padding: 5vw 0 50rem 0;
 		position: relative;
 		border-bottom: 2px solid #cacaca;
+		overflow:hidden;
 	}
 	#banner img {
 		position: absolute;
@@ -213,6 +219,7 @@ footer ul li:last-of-type {
 		right: 20%;
 		width: auto;
 		height: 60%;
+		overflow:hidden;
 	}
 	#banner-text {
 		width: 100%;
@@ -234,6 +241,7 @@ footer ul li:last-of-type {
 		background-size: cover;
 		padding: 5vw 0 30rem 0;
 		align-items: center;
+		overflow:hidden;
 	}
 	#banner img {
 		position: absolute;
@@ -241,6 +249,7 @@ footer ul li:last-of-type {
 		right: 20%;
 		width: auto;
 		height: 50%;
+		overflow:hidden;
 	}
 }
 @media (max-width:479px) {
@@ -250,6 +259,10 @@ footer ul li:last-of-type {
 		left: 30%;
 		width: auto;
 		height: 50%;
+		overflow: hidden;
+	}
+	#banner {
+		overflow: hidden;
 	}
 }
 
