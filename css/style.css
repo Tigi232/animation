@@ -84,6 +84,9 @@ section {
 	font-size: 30px;
 	margin-top: 3rem;
 }
+h1 {
+	font-family: 'Abril Fatface', cursive;
+}
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 26px;
@@ -195,9 +198,6 @@ footer ul li:last-of-type {
 	@keyframes slideinright {
 		0% { margin-right: -200px; }
 		100% { margin-right: 0px; }
-	}
-	h1 {
-		font-family: 'Abril Fatface', cursive;
 	}
 	h1, h2, p, .button {
 		animation-name: slidein, fadin;
