@@ -28,6 +28,9 @@ nav ul li {
 	display: inline-block;
 	float: left;
 }
+#akciok {
+	color: #60d9a3!important;
+}
 nav ul li a {
 	padding: 0 2rem 0 0;
 }
@@ -191,18 +194,24 @@ footer ul li:last-of-type {
 		bottom: 0!important;
 		margin: auto!important;
 	}
+	#akciok {
+		display: none;
+	}
 }
 @media (max-width:1180px) {
 	#ajandek img {
 		width: 100%;
 		height: 100%;
-		object-fit:cover;
+		object-fit: cover;
 	}
 	nav ul li a {
-		padding: 0 1rem 0 0;
+		padding: 0 0 0 1rem;
 	}
 	#cosmetics {
 		display: none;
+	}
+	#akciok {
+		color: #60d9a3!important;
 	}
 }
 @media (max-width:1040px) {
