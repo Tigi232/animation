@@ -28,6 +28,9 @@ nav ul li {
 	display: inline-block;
 	float: left;
 }
+nav ul li a:hover {
+	color: #f85f79;
+}
 #akciok {
 	color: #60d9a3!important;
 }
@@ -56,7 +59,7 @@ section {
 }
 .button {
     display: inline-block;
-    background:#f85f79;
+    background: #f85f79;
 	border-radius: 30px;
     color: #ffffff;
     text-transform: uppercase;
@@ -64,6 +67,10 @@ section {
     font-weight: bold;
     padding: 0.5rem 1.5rem;
     margin: 1.5rem 0 4vw 0;
+}
+.button:hover {
+	background: none;
+	color: #f85f79;
 }
 @keyframes slidein {
 	0% { margin-left: -200px; }
@@ -135,6 +142,7 @@ h1, h2 {
 }
 .product .button {
     display: inline-block;
+	border: solid 1px #ffffff;
 	background-color: inherit;
     color: #f85f79;
     text-transform: uppercase;
@@ -142,6 +150,11 @@ h1, h2 {
     font-weight: bold;
     padding: 0.5rem 1.5rem;
     margin: 0.5rem 0 2vw 0;
+}
+.product .button:hover {
+	border: solid 1px #f85f79;
+	border-radius: 30px;
+	border-color: #f85f79;
 }
 #ajandek {
 	text-align: center;
