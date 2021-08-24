@@ -1,6 +1,7 @@
 body {
 	font-family: 'Abril Fatface', cursive;
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
 .center-box {
 	width: 80%;
