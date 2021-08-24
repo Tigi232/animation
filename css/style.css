@@ -140,7 +140,6 @@ footer {
 footer ul li {
 	display: inline-block;
 	margin: auto;
-	
 }
 footer ul li a {
 	padding: 0 1rem 0 1rem;
@@ -267,6 +266,17 @@ footer ul li:last-of-type {
 		height: 50%;
 		overflow:hidden;
 	}
+	footer ul li {
+        font-size: large!important;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+	footer ul li a {
+	padding: 0 1rem 0 1rem;
+	color: #333333;
+	border-right: none;
+	margin: 10px 0 20px; 
+}
 }
 @media (max-width:479px) {
     #banner img {
