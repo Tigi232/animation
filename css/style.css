@@ -72,32 +72,6 @@ section {
 	background: none;
 	color: #f85f79;
 }
-@keyframes slidein {
-	0% { margin-left: -200px; }
-	100% { margin-left: 0px; }
-}
-@keyframes fadin {
-	0% { opacity: 0%; }
-	100% { opacity: 100%; }
-}
-@keyframes slideinright {
-	0% { margin-right: -200px; }
-	100% { margin-right: 0px; }
-}
-h1 {
-	font-family: 'Abril Fatface', cursive;
-}
-h1, h2, p, .button {
-	animation-name: slidein, fadin;
-	animation-duration: 4s;
-}
-#banner img {
-	animation-name: slideinright, fadin;
-	animation-duration: 4s;
-}
-#cosmetics {
-	animation: fadin;
-}
 #banner-text h1 {
 	font-size: 40px;
 }
@@ -209,6 +183,32 @@ footer ul li:last-of-type {
 	}
 	#akciok {
 		display: none;
+	}
+	@keyframes slidein {
+		0% { margin-left: -200px; }
+		100% { margin-left: 0px; }
+	}
+	@keyframes fadin {
+		0% { opacity: 0%; }
+		100% { opacity: 100%; }
+	}
+	@keyframes slideinright {
+		0% { margin-right: -200px; }
+		100% { margin-right: 0px; }
+	}
+	h1 {
+		font-family: 'Abril Fatface', cursive;
+	}
+	h1, h2, p, .button {
+		animation-name: slidein, fadin;
+		animation-duration: 4s;
+	}
+	#banner img {
+		animation-name: slideinright, fadin;
+		animation-duration: 4s;
+	}
+	#cosmetics {
+		animation: fadin;
 	}
 }
 @media (max-width:1180px) {
