@@ -21,7 +21,6 @@ header .center-box {
 nav ul li {
 	display: inline-block;
 	float: left;
-	
 }
 nav ul li a {
 	padding: 0 2rem 0 0;
@@ -254,7 +253,10 @@ footer ul li:last-of-type {
 		left: 30%;
 		width: auto;
 		height: 50%;
-		overflow:hidden;
+		overflow: hidden;
+	}
+	#banner {
+		overflow: hidden;
 	}
 }
 
