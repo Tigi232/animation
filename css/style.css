@@ -36,6 +36,7 @@ nav ul li a:hover {
 }
 nav ul li a {
 	padding: 0 2rem 0 0;
+	color: inherit;
 }
 section {
     margin-bottom: 4vw!important;
